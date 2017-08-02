@@ -344,7 +344,7 @@ jiathis: true
 google_site_verification: google24611fe8e722fc62.html
 
 # Google Analytics
-#google_analytics:
+google_analytics: UA-103815966-1
 
 # Yandex Webmaster tools verification setting
 # See: https://webmaster.yandex.ru/

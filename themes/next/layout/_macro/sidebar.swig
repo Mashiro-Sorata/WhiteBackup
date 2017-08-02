@@ -35,6 +35,24 @@
               <p class="site-description motion-element" itemprop="description">{{ theme.description }}</p>
           {% endif %}
         </div>
+
+        <!--my custom code begin-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
+        <script type="text/javascript">
+          $(document).ready(function(){
+            $("div.sidebar-inner").mouseenter(function(){
+              $(".mydivshow").delay(100).velocity({opacity: 1}, 500);
+              });
+            $("div.sidebar-inner").mouseleave(function(){
+              $(".mydivshow").velocity({opacity:0});
+              });
+          })
+        </script>
+
+        <div id="mydivshow" class="mydivshow">
+        <!--my custom code end-->
+
         <nav class="site-state motion-element">
 
           {% if config.archive_dir != '/' %}
@@ -121,7 +139,9 @@
         {% endif %}
 
         {% include '../_custom/sidebar.swig' %}
-
+      <!--my custom code begin-->
+      </div>
+      <!--my custom code end-->
       </section>
 
       {% if display_toc and toc(page.content).length > 1 %}
