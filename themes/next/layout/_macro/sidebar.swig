@@ -40,14 +40,13 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
         <script type="text/javascript">
-          $(document).ready(function(){
-            $("div.sidebar-inner").mouseenter(function(){
-              $(".mydivshow").delay(100).velocity({opacity: 1}, 500);
-              });
-            $("div.sidebar-inner").mouseleave(function(){
-              $(".mydivshow").velocity({opacity:0});
-              });
-          })
+        $("div.sidebar-inner").hover(function () {
+            if (!$("#mydivshow").is(":animated"))
+                $("#mydivshow").animate({opacity: 1});
+         },function () {
+            if (!$("#mydivshow").is(":animated"))
+                $("#mydivshow").animate({opacity: 0});
+         });
         </script>
 
         <div id="mydivshow" class="mydivshow">
