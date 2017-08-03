@@ -5,7 +5,7 @@
   <span itemprop="copyrightYear">{{ current }}</span>
   <span class="with-love">
     <!-- <i class="fa fa-{{ theme.authoricon }}"></i> -->
-     <i class="iconfont">&#xe661;</i>
+     <i class="iconfont">&#xe608;</i>
   </span>
   <span class="author" itemprop="copyrightHolder">{{ config.author }}</span>
 </div>

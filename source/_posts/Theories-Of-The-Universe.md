@@ -7,10 +7,13 @@ copyright: true
 password:
 ---
 
-此壁纸为运行在Wallpaper Engine上的网页动态壁纸，也是第一次接触html的作品。懒懒散散更新到现在，效果算一般般吧~
-# Preview(预览图)
-<img class="blockquote-center" src="http://oty1v077k.bkt.clouddn.com/preview.png" width = "800px" height = "100%" alt="preview_pic"/>
+此壁纸为运行在[Wallpaper Engine](http://store.steampowered.com/app/431960/Wallpaper_Engine/)上的网页动态壁纸，也是第一次接触html的作品。懒懒散散更新到现在，效果算一般般吧~
+预览gif图4M多，但是帧数相比实际运行的帧数差很多。<br>
 <!-- more -->
+以下为steam上创意工坊的链接：[Theories Of The Universe](http://steamcommunity.com/sharedfiles/filedetails/?id=848592407)
+
+# Preview(预览图)
+<img class="blockquote-center" src="http://oty1v077k.bkt.clouddn.com/universepreviewpic.gif" width = "800px" height = "100%" alt="preview_pic"/>
 ***
 # Description(描述)：
 壁纸一共8个可调整项：
@@ -49,4 +52,5 @@ password:
 ***
 # PS(备注)：
 <div align="center"><img src="http://oty1v077k.bkt.clouddn.com/jianc_jump.gif" height = "100%" alt="jump"/></div>
-目前考研暂时不会动这个项目了，大概吧……
+目前忙起来暂时不会动这个项目了，大概吧……<br/>
+有兴趣的朋友可以在[我的仓库](https://github.com/Mashiro-Sorata/Theories_Of_The_Universe)里看一下吧~
