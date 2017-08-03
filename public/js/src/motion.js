@@ -1,6 +1,6 @@
 /* global NexT: true */
 
-// custom setting
+// my custom code begin
 window.onresize = function(){
     var mtw=document.body.offsetWidth;
     var live2d=document.getElementById('live2dcanvas');
@@ -12,10 +12,17 @@ window.onresize = function(){
     mtw >= 975 && document.getElementById('sidebar').style.width=='350px' && $('body').velocity('stop').velocity({paddingLeft: 350},0);
 }
 
+window.onload=function(){
+    var live2d=document.getElementById('live2dcanvas');
+    if(NexT.utils.isDesktop())
+        live2d.style.visibility="visible";
+    else
+        live2d.style.visibility="hidden";
+}
 document.querySelector('.site-author-image').onclick=function(){window.location.href="http://mashirosorata.vicp.io";};
 
 
-// end custom
+// my custom code end
 
 $(document).ready(function () {
   NexT.motion = {};
