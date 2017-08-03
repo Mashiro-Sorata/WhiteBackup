@@ -1,31 +1,36 @@
 /* global NexT: true */
 
-// my custom code begin
-window.onresize = function(){
-    var mtw=document.body.offsetWidth;
-    var live2d=document.getElementById('live2dcanvas');
-    if(live2d){
-        if(mtw < 750) live2d.style.visibility="hidden";
-        else live2d.style.visibility="visible";
-    }
-    mtw < 975 && $('body').velocity('stop').velocity({paddingLeft: 0},0);
-    mtw >= 975 && document.getElementById('sidebar').style.width=='350px' && $('body').velocity('stop').velocity({paddingLeft: 350},0);
-}
 
-window.onload=function(){
-    var live2d=document.getElementById('live2dcanvas');
-    if(NexT.utils.isDesktop())
-        live2d.style.visibility="visible";
-    else
-        live2d.style.visibility="hidden";
-}
-document.querySelector('.site-author-image').onclick=function(){window.location.href="http://mashirosorata.vicp.io";};
-
-
-// my custom code end
 
 $(document).ready(function () {
   NexT.motion = {};
+
+  // my custom code begin
+  window.onresize = function(){
+      var bwos=document.body.offsetWidth;
+      var live2d=document.getElementById('live2dcanvas');
+      if(live2d){
+          bwos < 750 ? live2d.style.visibility="hidden" : live2d.style.visibility="visible";
+      }
+      bwos < 975 && $('body').velocity('stop').velocity({paddingLeft: 0},0);
+      $('aside#sidebar').css("display") != "none" && $('body').velocity('stop').velocity({paddingLeft: 350},0);
+  }
+
+  window.onload=function(){
+      var bwol=document.body.offsetWidth;
+      console.log(bwol);
+      var live2d=document.getElementById('live2dcanvas');
+      if(bwol < 975){
+          $('aside#sidebar').css("display","none");
+          $('body').css("paddingLeft","0px");
+      }
+      // NexT.utils.isDesktop() ? live2d.style.visibility="visible" : live2d.style.visibility="hidden";
+      bwol < 750 ? live2d.style.visibility="hidden" : live2d.style.visibility="visible";
+  }
+  document.querySelector('.site-author-image').onclick=function(){window.location.href="http://mashirosorata.vicp.io";};
+
+
+  // my custom code end
 
   var sidebarToggleLines = {
     lines: [],
