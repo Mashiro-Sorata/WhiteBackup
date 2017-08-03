@@ -40,7 +40,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
         <script type="text/javascript">
-        $("div.sidebar-inner").hover(function () {
+        $("section.site-overview").hover(function () {
             if (!$("#mydivshow").is(":animated"))
                 $("#mydivshow").animate({opacity: 1});
          },function () {
