@@ -16,7 +16,8 @@ function init(can,w,h,star_num,stars,starObj,star_max_wh,star_min_wh)//初始化
  	}
 }
 
-function NP_rand3(adj_p)		//随机产生+ - 1或者0,+ - 1概率相同且可调
+function NP_rand3(adj_p)
+//随机产生+ - 1或者0,+ - 1概率相同且可调
 {
 	if((Math.random()-adj_p)<=0){
 		return -1;
@@ -40,13 +41,13 @@ function randvary(stars,star_num,star_max_wh,star_min_wh,adj_p)
 	//此函数为对各个星星的亮度进行调整
 	var i=star_num;
 	while(i--)
-	{	
+	{
 		if (stars[i]['step_record']==stars[i]['step'])
 		{
 			stars[i]['step_record']=0;
 			stars[i]['add_rand']=NP_rand3(adj_p);
-		} 
-	
+		}
+
 		if(stars[i]['wh']==star_min_wh[i])
 		{
 			stars[i]['add_rand']=1;
@@ -169,7 +170,7 @@ function earth_contain(flash_div,bgp_div,w,h,earthx,earthy,earthw,earthh)
 
 function earth_auto(flash_div,bgp_div,w,h,w_h,bgp_w_h,earthx,earthy,earthw,earthh,flag_wh)
 {
-	
+
 	if(flag_wh)
 	{
 		var pew=bgp_w_h*h,
@@ -371,7 +372,7 @@ function main()
 
 	$('#mystyle').change(function(){
 		bgp_style=this.value;
-			{  
+			{
 				ctx.clearRect(0,0,w,h);
 				w_h=screen['width']/screen['height'];
 				flag_wh=(w_h>=bgp_w_h) ? 1:0;
@@ -492,7 +493,7 @@ function main()
         }
         if(properties['C1_bgp_style_opt']){
         	bgp_style=properties['C1_bgp_style_opt']['value'];
-        	
+
         }
         if(properties['C4_adj_p_opt']){
         	adj_p=properties['C4_adj_p_opt']['value']/100;
@@ -537,7 +538,7 @@ function main()
 		default:
 			temp_str=bgp_style+(2-flag_wh)+'()';
 			earth_auto(flash_div,bgp_div,w,h,w_h,bgp_w_h,earthx,earthy,earthw,earthh,flag_wh);
-	}		
+	}
 	var int=setInterval(function(){eval(temp_str);},ftime);
 
 	function contain()
@@ -585,7 +586,7 @@ function main()
 	  this.length = from < 0 ? this.length + from : from;
 	  return this.push.apply(this, rest);
 };
-	
+
 	//从原始数组获得随机子数组
 	function getRandomArray()
 	{
@@ -605,4 +606,3 @@ function main()
 		}
 	}
 }
-
