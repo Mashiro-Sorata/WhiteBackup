@@ -97,6 +97,14 @@ live2d:
 #     github: git@github.com:Mashiro-Sorata/WhiteBackup,master
 #     #gitcafe: git@github.com:xxx/xxx.git,branchName
 
+# Sitemap Setting
+sitemap:
+ path: sitemap.xml
+
+baidusitemap:
+ path: baidusitemap.xml
+
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
