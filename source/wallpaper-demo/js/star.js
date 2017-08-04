@@ -16,8 +16,7 @@ function init(can,w,h,star_num,stars,starObj,star_max_wh,star_min_wh)//初始化
  	}
 }
 
-function NP_rand3(adj_p)
-//随机产生+ - 1或者0,+ - 1概率相同且可调
+function NP_rand3(adj_p)		//随机产生+ - 1或者0,+ - 1概率相同且可调
 {
 	if((Math.random()-adj_p)<=0){
 		return -1;
@@ -290,9 +289,18 @@ function main()
 	$('#mylang').change(function(){
 		if(this.value=='cn'){
 			$('.sp_myvisible font')[0].innerHTML='显示选项';
-			$('#myvisible')[0].options.length=0;
-			$('#myvisible')[0].options.add(new Option('隐藏','hide'));
-			$('#myvisible')[0].options.add(new Option('显示','show'));
+			if($('#myvisible')[0].value=='hide'){
+				$('#myvisible')[0].options.length=0;
+				$('#myvisible')[0].options.add(new Option('隐藏','hide'));
+				$('#myvisible')[0].options.add(new Option('显示','show'));
+				$('#myvisible').val('hide');
+			}
+			else{
+				$('#myvisible')[0].options.length=0;
+				$('#myvisible')[0].options.add(new Option('隐藏','hide'));
+				$('#myvisible')[0].options.add(new Option('显示','show'));
+				$('#myvisible').val('show');
+			}
 
 			$('.sp_mystyle font')[0].innerHTML='壁纸样式';
 			$('#mystyle')[0].options.length=0;
@@ -318,9 +326,18 @@ function main()
 
 		else{
 			$('.sp_myvisible font')[0].innerHTML='Show Options';
-			$('#myvisible')[0].options.length=0;
-			$('#myvisible')[0].options.add(new Option("hide","hide"));
-			$('#myvisible')[0].options.add(new Option("show","show"));
+			if($('#myvisible')[0].value=='hide'){
+				$('#myvisible')[0].options.length=0;
+				$('#myvisible')[0].options.add(new Option("hide","hide"));
+				$('#myvisible')[0].options.add(new Option("show","show"));
+				$('#myvisible').val('hide');
+			}
+			else{
+				$('#myvisible')[0].options.length=0;
+				$('#myvisible')[0].options.add(new Option("hide","hide"));
+				$('#myvisible')[0].options.add(new Option("show","show"));
+				$('#myvisible').val('show');
+			}
 
 			$('.sp_mystyle font')[0].innerHTML='Image Position';
 			$('#mystyle')[0].options.length=0;
