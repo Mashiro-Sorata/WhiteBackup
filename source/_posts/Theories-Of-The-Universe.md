@@ -12,10 +12,14 @@ password:
 <!-- more -->
 以下为steam上创意工坊的链接：[Theories Of The Universe](http://steamcommunity.com/sharedfiles/filedetails/?id=848592407)
 
-# Preview(预览图)
+# 预览图及网页版Demo
 <img class="blockquote-center" src="http://oty1v077k.bkt.clouddn.com/universepreviewpic.gif" width = "800px" height = "100%" alt="preview_pic"/>
+
+<p align="center">[DEMO](http://mashirosorata.vicp.io/wallpaper-demo/demo.html)</p>
+
 ***
-# Description(描述)：
+
+# 描述
 壁纸一共8个可调整项：
 1. 闪动位移范围：值越大，星星抖动越厉害；
 2. 闪动速度：星星闪动变化的速度，值越大变化也就越快，增大可获取更好的效果；
@@ -26,7 +30,7 @@ password:
 7. 星球转动速度：设置星球自转速度。
 8. 调整星星个数时，星星随机显示。
 ***
-# ChangeLog(更新日志)：
+# ChangeLog(更新日志)
 <font color="#DAA520" size=5>2017年</font>
 
 > * update1.01：更新于>1月25日>下午10:40
@@ -48,9 +52,11 @@ password:
 > * update2.10：更新于>7月14日>下午11:41
 > <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.优化了主程序部分的代码，占用CPU资源更少；<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.改动：调整星星个数时星星随机显示。</p>
+> * update2.10：更新于>8月4日>下午5:24
+> <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;更正一个乱序显示星星时的小bug。</p>
 
 ***
-# PS(备注)：
+# PS(备注)
 <div align="center"><img src="http://oty1v077k.bkt.clouddn.com/jianc_jump.gif" height = "100%" alt="jump"/></div>
 目前忙起来暂时不会动这个项目了，大概吧……<br/>
 有兴趣的朋友可以在[我的仓库](https://github.com/Mashiro-Sorata/Theories_Of_The_Universe)里看一下吧~
