@@ -40,14 +40,93 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
         <script type="text/javascript">
-        $("section.site-overview").hover(function () {
-            if (!$("#mydivshow").is(":animated"))
-                $("#mydivshow").animate({opacity: 1});
-         },function () {
-            if (!$("#mydivshow").is(":animated"))
-                $("#mydivshow").animate({opacity: 0});
-         });
-        </script>
+        var myp=false;
+        $("section.site-overview").hover(function(ae) {
+            var e = window.event || ae ;
+            var s = e.fromElement || e.relatedTarget ;
+            if( document.all ){
+              if(  !(s == this || this.contains(s))  ){
+                if (!$('#mydivshow').is(":animated")){
+                  $('#mydivshow').animate({opacity: 1});
+                  $("#mydivshow").delay(100).css("visibility","visible");
+                }
+                myp=true;
+              }
+            }else{
+              var res= this.compareDocumentPosition(s) ;
+              if(  !(s == this || res == 20 || res == 0 )  ){
+                if (!$('#mydivshow').is(":animated")){
+                  $('#mydivshow').animate({opacity: 1});
+                  $("#mydivshow").delay(100).css("visibility","visible");
+                }
+                myp=true;
+              }
+            }
+        },function (ae) {
+            var e = window.event || ae;
+            var s = e.toElement || e.relatedTarget;
+            if(document.all){
+              if( !this.contains(s) ){
+                if (!$('#mydivshow').is(":animated")){
+                  $('#mydivshow').animate({height: 250});
+          			  $('#player1').delay(100).animate({height: 66});
+                  $('#mydivshow').animate({opacity: 0});
+                  $("#mydivshow").delay(100).css("visibility","hidden");
+                  if($('#player1').css('height')=='250px'){
+                    $('.aplayer-icon-menu')[0].click();
+                    myflag=!myflag;
+                  }
+                }
+                myp=false;
+              }
+            }else{
+              var res= this.compareDocumentPosition(s) ;
+              if( ! ( res == 20 || res == 0) ){
+                if (!$('#mydivshow').is(":animated")){
+                  $('#mydivshow').animate({height: 250});
+          			  $('#player1').delay(100).animate({height: 66});
+                  $('#mydivshow').animate({opacity: 0});
+                  $("#mydivshow").delay(100).css("visibility","hidden");
+                  if($('#player1').css('height')=='250px'){
+                    $('.aplayer-icon-menu')[0].click();
+                    myflag=!myflag;
+                  }
+                }
+                myp=false;
+              }
+            }
+        });
+
+      function mycheck(){
+	       if(myp && !$('#mydivshow').is(":animated") && $('#mydivshow').css('opacity')==0){
+		       $('#mydivshow').animate({opacity: 1});
+           $("#mydivshow").delay(100).css("visibility","visible");
+        }
+	       else if(!myp && !$('#mydivshow').is(":animated") && $('#mydivshow').css('opacity')==1){
+           $('#mydivshow').animate({height: 250});
+           $('#player1').delay(100).animate({height: 66});
+		       $('#mydivshow').animate({opacity: 0});
+           $("#mydivshow").delay(100).css("visibility","hidden");
+           if($('#player1').css('height')=='250px'){
+              $('.aplayer-icon-menu')[0].click();
+              myflag=!myflag;
+            }
+        }
+      if($('.sidebar-nav-active').css('display')){
+        $('.aplayer-list').css('height','250px');
+      }
+    }
+
+      var mytime;
+      $('.sidebar-toggle')[0].onclick=function(){
+        if($('#sidebar').css('display')=='block' && $('#sidebar').css('width')=='350px'){
+          clearInterval(mytime);
+        }
+        else{
+          mytime=setInterval(mycheck,500);
+        }
+      };
+      </script>
 
         <div id="mydivshow" class="mydivshow">
         <!--my custom code end-->
