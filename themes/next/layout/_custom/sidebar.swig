@@ -23,12 +23,30 @@
 	    	author: 'Sound Horizon',
 	    	url: 'http://ou68gv0zg.bkt.clouddn.com/Sound%20Horizon%20-%20%E6%81%8B%E4%BA%BA%E3%82%92%E5%B0%84%E3%81%A1%E5%A0%95%E3%81%A8%E3%81%97%E3%81%9F%E6%97%A5%20_%20Koibito%20wo%20Uchiotoshia%20Hi.mp3',
 	    	pic: 'http://ou68gv0zg.bkt.clouddn.com/Sound%20Horizon%20-%20%E6%81%8B%E4%BA%BA%E3%82%92%E5%B0%84%E3%81%A1%E5%A0%95%E3%81%A8%E3%81%97%E3%81%9F%E6%97%A5.jpg'
+	    },
+	    {
+	    	title: 'cat\'s dance',
+	    	author: 'すーぱーそに子',
+	    	url: 'http://ou68gv0zg.bkt.clouddn.com/%E3%81%99%E3%83%BC%E3%81%B1%E3%83%BC%E3%81%9D%E3%81%AB%E5%AD%90%20-%20cat%27s%20dance.mp3',
+	    	pic: 'http://ou68gv0zg.bkt.clouddn.com/%E3%81%99%E3%83%BC%E3%81%B1%E3%83%BC%E3%81%9D%E3%81%AB%E5%AD%90%20-%20cat%27s%20dance.jpg'
+	    },
+	    {
+	    	title: '夏令时记录(piano.ver)',
+	    	author: 'ゆめこ',
+	    	url: 'http://ou68gv0zg.bkt.clouddn.com/%E3%82%86%E3%82%81%E3%81%93%20-%20%E5%A4%8F%E4%BB%A4%E6%97%B6%E8%AE%B0%E5%BD%95%28piano.ver%29.mp3',
+	    	pic: 'http://ou68gv0zg.bkt.clouddn.com/%E3%82%86%E3%82%81%E3%81%93%20-%20%E5%A4%8F%E4%BB%A4%E6%97%B6%E8%AE%B0%E5%BD%95%28piano.ver%29.jpg'
+	    },
+	    {
+	    	title: '月光',
+	    	author: '鬼束千寻',
+	    	url: 'http://ou68gv0zg.bkt.clouddn.com/%E9%AC%BC%E6%9D%9F%E5%8D%83%E5%AF%BB%20-%20%E6%9C%88%E5%85%89.mp3',
+	    	pic: 'http://ou68gv0zg.bkt.clouddn.com/%E9%AC%BC%E6%9D%9F%E5%8D%83%E5%AF%BB%20-%20%E6%9C%88%E5%85%89.jpg'
 	    }]
 });
 
   $('.aplayer-icon-menu')[0].click();   //initial height
   var myflag=true;
-	$('svg')[3].onclick=function(){
+	$('.aplayer-icon-menu svg').click(function(){
     var temp=$('#player1').css('height');
 		if(temp=='250px' && !myflag){
       $('#mydivshow').animate({height: 250});
@@ -39,5 +57,5 @@
 			$('#player1').delay(50).animate({height: 250});
     }
     myflag=!myflag;
-	}
+	});
 	</script>

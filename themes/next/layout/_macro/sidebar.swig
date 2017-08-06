@@ -36,7 +36,7 @@
           {% endif %}
         </div>
 
-        <!--my custom code begin-->
+<!--my custom code begin-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
         <script type="text/javascript">
@@ -129,7 +129,7 @@
       </script>
 
         <div id="mydivshow" class="mydivshow">
-        <!--my custom code end-->
+<!--my custom code end-->
 
         <nav class="site-state motion-element">
 

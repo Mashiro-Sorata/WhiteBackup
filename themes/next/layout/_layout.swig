@@ -81,6 +81,7 @@
   {% include '_third-party/mathjax.swig' %}
   {% include '_third-party/exturl.swig' %}
   {{ live2d() }}
+  {% include '_custom/myapcontroler.swig' %}
 </body>
 </html>
 <!-- 页面点击小红心 -->
