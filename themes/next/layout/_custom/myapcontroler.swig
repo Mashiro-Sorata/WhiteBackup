@@ -104,7 +104,7 @@
   		$('.apmode-random').velocity({right: -30,opacity: 0},200);
   		$('.apmode-single').velocity({right: 0,opacity: 1},200);
   		$('.aplayer-icon.aplayer-icon-mode')[0].click();
-  		console.log('single');
+  		//console.log('single');
   	}
   });
 
@@ -113,7 +113,7 @@
   		$('.apmode-single').velocity({right: -30,opacity: 0},200);
   		$('.apmode-order').velocity({right: 0,opacity: 1},200);
       $('.aplayer-icon.aplayer-icon-mode')[0].click();
-  		console.log('order');
+  		//console.log('order');
   	}
   });
 
@@ -122,7 +122,7 @@
   		$('.apmode-order').velocity({right: -30,opacity: 0},200);
   		$('.apmode-loop').velocity({right: 0,opacity: 1},200);
       $('.aplayer-icon.aplayer-icon-mode')[0].click();
-  		console.log('loop');
+  		//console.log('loop');
   	}
   });
 
@@ -131,7 +131,7 @@
   		$('.apmode-loop').velocity({right: -30,opacity: 0},200);
   		$('.apmode-random').velocity({right: 0,opacity: 1},200);
       $('.aplayer-icon.aplayer-icon-mode')[0].click();
-  		console.log('random');
+  		//console.log('random');
   	}
   });
 
@@ -140,7 +140,7 @@
   		$('.playsong').velocity({right: -30,opacity: 0},200);
   		$('.pause').velocity({right: 0,opacity: 1},200);
       ap.play();
-  		console.log('play');
+  		//console.log('play');
   	}
   });
   $('.pause').click(function(){
@@ -148,7 +148,8 @@
   		$('.pause').velocity({right: -30,opacity: 0},200);
   		$('.playsong').velocity({right: 0,opacity: 1},200);
       ap.pause();
-  		console.log('pause');
+			pauseflag=true;
+  		//console.log('pause');
   	}
   });
 
@@ -159,6 +160,9 @@
   		$('.nextsong').velocity("reverse");
   		if(ap.mode=='random'){
         ap.setMusic(ap.nextRandomNum());
+				if(pauseflag){
+					cus_lastsong.push(ap.playIndex);
+				}
       }
       else if(ap.mode=='single'){
         ap.setMusic(ap.playIndex);
@@ -177,14 +181,23 @@
         }
         else{
           ap.setMusic(ap.playIndex+1);
+					if(pauseflag){
+						cus_lastsong.push(ap.playIndex);
+					}
         }
       }
       else{
         if(ap.playIndex==$('.aplayer-list ol li').length-1){
           ap.setMusic(0);
+					if(pauseflag){
+						cus_lastsong.push(ap.playIndex);
+					}
         }
         else{
           ap.setMusic(ap.playIndex+1);
+					if(pauseflag){
+						cus_lastsong.push(ap.playIndex);
+					}
         }
       }
       if($('.pause').css('right')=='-30px' && tempflag){
@@ -205,15 +218,20 @@
   var cus_lastsong=new Array();
   var nowp_song=0;
   var histy_to_now=false;
+	var pauseflag=false;
   ap.on('play',function(){
-    if(!nowp_song && ap.mode!='single' && !histy_to_now){
-      cus_lastsong.push(ap.playIndex);
-    }
-    else{
-      histy_to_now=false;
-    }
-    console.log(cus_lastsong);
+	//console.log(pauseflag);
+	  if(!nowp_song && ap.mode!='single' && !histy_to_now){
+			if(!pauseflag)
+	    	cus_lastsong.push(ap.playIndex);
+			pauseflag=false;
+	  }
+	  else{
+	    histy_to_now=false;
+	  }
+    //console.log(cus_lastsong);
   });
+
 
   $('.lastsong').click(function(){
   	if (!$('.lastsong.velocity-animating').length){
@@ -249,7 +267,7 @@
         $('.waitingwordbuttom').delay(2000).velocity("reverse");
       }
 
-  		console.log('last');
+  		//console.log('last');
   	}
   });
 
@@ -269,6 +287,7 @@
       if(ap.button.className=='aplayer-button aplayer-play'){
         $('.playsong').velocity({right: -30,opacity: 0},200);
         $('.pause').velocity({right: 0,opacity: 1},200);
+				pauseflag=true;
       }
       else{
         $('.pause').velocity({right: -30,opacity: 0},200);
@@ -278,15 +297,12 @@
     else{
       $('.playsong').velocity({right: -30,opacity: 0},200);
       $('.pause').velocity({right: 0,opacity: 1},200);
+			pauseflag=true;
     }
   });
 
-  ap.on('error',function(){
-    console.log('error!');
-  });
-
   $('.aplayer-icon.aplayer-icon-mode').click(function(){
-      console.log('click');
+      //console.log('click');
       if(ap.mode=='single'){
         $('.apmode-random').velocity({right: -30,opacity: 0},100);
         $('.apmode-single').velocity({right: 0,opacity: 1},100);
