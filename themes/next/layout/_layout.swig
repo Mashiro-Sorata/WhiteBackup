@@ -9,7 +9,7 @@
 <head>
   {% include '_partials/head.swig' %}
   <title>{% block title %}{% endblock %}</title>
-  <!-- <style> #live2dcanvas { left:0px!important;}</style> -->
+  <style> #live2dcanvas { right:-20px!important;}</style>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="{{ page.lang || page.language || config.language }}">
