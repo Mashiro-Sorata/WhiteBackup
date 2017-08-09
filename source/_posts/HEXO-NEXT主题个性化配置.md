@@ -400,7 +400,7 @@ var ap = new APlayer({
 ```css
 //mysidebar controler style
 
-.fixed_side{position:fixed;top:250px;width:130px;height:120px;right:-30px;}
+.fixed_side{position:fixed;top:250px;width:130px;height:120px;}
 
 .mybtn{position:fixed;width:100px;height:120px;background-color:rgba(220,20,60,0);right:0px;}
 .mybtn:hover{cursor:pointer;}
