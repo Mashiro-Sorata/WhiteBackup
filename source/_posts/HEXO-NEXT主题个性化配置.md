@@ -242,7 +242,7 @@ $('.site-author-image').click(function(){
   ```
 
 ## 设置鼠标划入侧边栏才显示站点信息：
-  1. 设置自定义div<br>
+1. 设置自定义div<br>
   在`theme/next/layout/_macro`文件夹下打开`sidebar.swig`文件，找到以下代码行的位置：
   ```Html
   <nav class="site-state motion-element">
@@ -285,8 +285,9 @@ $('.site-author-image').click(function(){
           <div class="post-toc">
 
   ```
+
 2. 自定义区域的初始化设置<br>
-在`theme/next/source/css/_custom`文件夹下打开`custom.styl`文件，向里面增添下列代码：
+  在`theme/next/source/css/_custom`文件夹下打开`custom.styl`文件，向里面增添下列代码：
   ```css
     #mydivshow{opacity: 0;}
   ```
