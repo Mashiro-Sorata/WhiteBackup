@@ -3,7 +3,7 @@ title: HEXO+NEXT主题个性化配置
 copyright: true
 date: 2017-08-07 23:08:40
 categories: Html
-tags: [hexo,next,个性化设置]
+tags: [hexo,next,个性化设置,javascript,网站]
 top:
 password:
 description:
