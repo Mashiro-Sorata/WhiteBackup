@@ -367,19 +367,19 @@ var ap = new APlayer({
 在`theme/next/layout/_custom/`文件夹下新建一个`myapcontroler.swig`的文件。向其中添加以下代码：
 ```Html
 <div class="fixed_side" style="right: 0px">
-      <div class="waitingwordtop"><p>音乐加载中</p></div>
-			<div class="mybtn" style="display: inline-block"></div>
-      <div class="waitingwordbuttom"><p>不如来卖萌</p></div>
-			<div id="mysidebar" class="mysidebar">
-				<div class="apmode-single"></div>
-				<div class="apmode-loop"></div>
-				<div class="apmode-order"></div>
-				<div class="apmode-random"></div>
-				<div class="lastsong"></div>
-				<div class="pause"></div>
-				<div class="playsong"></div>
-				<div class="nextsong"></div>
-			</div>
+  <div class="waitingwordtop"><p>音乐加载中</p></div>
+  <div class="mybtn" style="display: inline-block"></div>
+  <div class="waitingwordbuttom"><p>不如来卖萌</p></div>
+  <div id="mysidebar" class="mysidebar">
+  	<div class="apmode-single"></div>
+  	<div class="apmode-loop"></div>
+  	<div class="apmode-order"></div>
+  	<div class="apmode-random"></div>
+  	<div class="lastsong"></div>
+  	<div class="pause"></div>
+  	<div class="playsong"></div>
+  	<div class="nextsong"></div>
+  	</div>
 </div>
 ```
 
