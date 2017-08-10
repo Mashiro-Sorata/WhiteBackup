@@ -367,13 +367,10 @@ var ap = new APlayer({
 在`theme/next/layout/_custom/`文件夹下新建一个`myapcontroler.swig`的文件。向其中添加以下代码：
 ```Html
 <div class="fixed_side" style="right: 0px">
-		<span style="display: inline-block;float: left">
-      <div class="waitingwordtop"><p><i class="iconfont">&#xe636;</i>音乐加载中<i class="iconfont">&#xe636;</i></p></div>
+      <div class="waitingwordtop"><p>音乐加载中</p></div>
 			<div class="mybtn" style="display: inline-block"></div>
-      <div class="waitingwordbuttom"><p><i class="iconfont">&#xe636;</i>不如来卖萌<i class="iconfont">&#xe636;</i></p></div>
-		</span>
-		<scpan style="display: inline-block;float: left">
-			<aside id="mysidebar" class="mysidebar">
+      <div class="waitingwordbuttom"><p>不如来卖萌</p></div>
+			<div id="mysidebar" class="mysidebar">
 				<div class="apmode-single"></div>
 				<div class="apmode-loop"></div>
 				<div class="apmode-order"></div>
@@ -382,8 +379,7 @@ var ap = new APlayer({
 				<div class="pause"></div>
 				<div class="playsong"></div>
 				<div class="nextsong"></div>
-			</aside>
-		</span>
+			</div>
 </div>
 ```
 
@@ -405,10 +401,10 @@ var ap = new APlayer({
 .mybtn{position:fixed;width:100px;height:120px;background-color:rgba(220,20,60,0);right:0px;}
 .mybtn:hover{cursor:pointer;}
 
-.waitingwordtop{background-color:rgba(255,255,255,0.5);width:140px;height:30px;position:absolute;top:-30px;right:-110px;color:#9400D3;opacity:0;border-radius:8px;p{height:30px;display:block;text-align:center;line-hight:30px;margin-bottom:0px;}}
-.waitingwordbuttom{background-color:rgba(255,255,255,0.5);width:140px;height:30px;position:absolute;top:120px;right:-110px;color:#FF4500;opacity:0;border-radius:8px;p{height:30px;display:block;text-align:center;line-hight:30px;margin-bottom:0px;}}
+.waitingwordtop{background-color:rgba(255,255,255,0.5);width:140px;height:30px;position:absolute;top:-30px;right:-110px;color:#9400D3;opacity:0;border-radius:8px;p{height:30px;display:block;text-align:center;line-height:30px;margin-bottom:0px;}}
+.waitingwordbuttom{background-color:rgba(255,255,255,0.5);width:140px;height:30px;position:absolute;top:120px;right:-110px;color:#FF4500;opacity:0;border-radius:8px;p{height:30px;display:block;text-align:center;line-height:30px;margin-bottom:0px;}}
 
-#mysidebar{width:30px;height:120px;right:-30px;opacity:0;}
+#mysidebar{position:fixed;width:30px;height:120px;right:-30px;opacity:0;}
 
 .mysidebar div{position:absolute;width:28px;height:28px;background-size:100%;background-color:rgba(173,255,47,0.7);border-radius:80px;border: 1px solid black;}
 .mysidebar div:hover{background-color:rgba(255,140,0,0.8);border: 2px solid black;}
