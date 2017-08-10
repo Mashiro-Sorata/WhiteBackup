@@ -44,7 +44,7 @@ body{
 在修改完文章背景色之后，文字颜色可能和背景色不能很好的搭配，这时候我们就需要修改文章字体的颜色了。打开`theme/next/source/css/_common/scaffolding`文件夹下的`base.styl`文件，找到`body{}`，将其中的`color:$text-color`更改为你想要的颜色即可。代码如下：
 ```css
 body {
-  position: relative; // Required by scrollspy
+  position: relative; /* Required by scrollspy */
   font-family: $font-family-base;
   font-size: $font-size-base;
   line-height: $line-height-base;
@@ -335,23 +335,23 @@ var ap = new APlayer({
 包含颜色更改，列表歌曲信息的排版修改。
 在`theme/next/source/css/_custom`文件夹下打开`custom.styl`文件，往里面添加以下代码：
 ```css
-.aplayer-list ol li:hover {   //列表悬停颜色
+.aplayer-list ol li:hover {   /*列表悬停颜色*/
                   background:rgba(颜色代码,透明度) none repeat scroll !important;}
 
-.aplayer-list ol li {   //列表底色
+.aplayer-list ol li {   /*列表底色*/
                         background:rgba(颜色代码,透明度);}
 
-.aplayer-list-light {   //列表播放歌曲颜色
+.aplayer-list-light {   /*列表播放歌曲颜色*/
                       background:rgba(颜色代码,透明度) none repeat scroll !important;}
 
-#player1 {//边框样式
+#player1 {    /*边框样式*/
           border-radius: 6px;
           div,ol {border-radius: 6px;}
         }
 
-#player1 *{color: 颜色代码;} //字体颜色
+#player1 *{color: 颜色代码;}    /*字体颜色*/
 
-//列表歌曲信息的排版
+/*列表歌曲信息的排版*/
 .aplayer-list-index{float:left;}
 .aplayer-list-title{float:left;}
 .aplayer-list-author{float:right;}
@@ -398,7 +398,7 @@ var ap = new APlayer({
 #### 初始化控制按钮样式
 在`theme/next/source/css/_custom`文件夹下打开`custom.styl`文件，往里面添加以下代码：
 ```css
-//mysidebar controler style
+/*mysidebar controler style*/
 
 .fixed_side{position:fixed;top:250px;width:130px;height:120px;}
 
