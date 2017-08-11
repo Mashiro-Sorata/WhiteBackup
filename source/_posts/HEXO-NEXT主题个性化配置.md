@@ -250,18 +250,15 @@ $('.site-author-image').click(function(){
   在其上添加以下代码：
   ```Html
   <!--my custom code begin-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-        <script type="text/javascript">
-        $("section.site-overview").hover(function () {
-            if (!$("#mydivshow").is(":animated"))
-                $("#mydivshow").animate({opacity: 1});
-         },function () {
-            if (!$("#mydivshow").is(":animated"))
-                $("#mydivshow").animate({opacity: 0});
-         });
-        </script>
+  <script type="text/javascript">
+    $("#sidebar").hover(function(){
+      $("#mydivshow").velocity('stop').velocity({opacity: 1});
+    },function(){
+      $("#mydivshow").velocity('stop').velocity({opacity: 0});
+    });
+  </script>
 
-        <div id="mydivshow" class="mydivshow">
+  <div id="mydivshow" class="mydivshow">
   <!--my custom code end-->
   ```
   然后找到代码行：

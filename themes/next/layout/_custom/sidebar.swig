@@ -1,5 +1,5 @@
 <script src="/js/src/APlayer.min.js"></script>
-<div id="player1" class="aplayer" style="width: 300px;height: 66px;background:rgba(0,0,0,0.5) none repeat scroll !important"></div>
+<div id="player1" class="aplayer" style="width:300px;height:66px;background:rgba(0,0,0,0.5)"></div>
 	<script type="text/javascript">
 	var ap = new APlayer({
 	    element: document.getElementById('player1'),                       // Optional, player element
@@ -45,16 +45,18 @@
 });
 
   $('.aplayer-icon-menu')[0].click();   //initial height
+	$('.aplayer-icon.aplayer-icon-mode').css('display','inline-block');
   var myflag=true;
+	$('.aplayer-list').css('height','180px');
 	$('.aplayer-icon-menu svg').click(function(){
     var temp=$('#player1').css('height');
 		if(temp=='250px' && !myflag){
-      $('#mydivshow').animate({height: 250});
-			$('#player1').delay(100).animate({height: 66});
+      $('#mydivshow').velocity('stop').velocity({height: 250});
+			$('#player1').velocity('stop').velocity({height: 66});
     }
 		else if(temp=='66px' && myflag){
-      $('#mydivshow').animate({height: 420});
-			$('#player1').delay(50).animate({height: 250});
+      $('#mydivshow').velocity('stop').velocity({height: 420});
+			$('#player1').velocity('stop').velocity({height: 250});
     }
     myflag=!myflag;
 	});
