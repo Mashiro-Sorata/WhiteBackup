@@ -250,6 +250,8 @@ $('.site-author-image').click(function(){
   在其上添加以下代码：
   ```Html
   <!--my custom code begin-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
   <script type="text/javascript">
     $("#sidebar").hover(function(){
       $("#mydivshow").velocity('stop').velocity({opacity: 1});
