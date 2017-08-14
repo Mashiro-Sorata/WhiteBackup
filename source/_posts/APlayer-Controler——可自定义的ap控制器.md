@@ -81,13 +81,13 @@ NPM:
   * `btn_width`: Optional, button's width, default: 100;
   * `btn_height`: Optional, button's height, default: 120;
   * `img_src`: Optional, button's background-image 'url-array', default: [];
-  * `img_style`: Optional, style of button's background-images, default: {repeat:'no-repeat',position:'center',size:'contain'};
+  * `img_style`: Optional, style of button's background-images, default: in [Javascript](#jump1);;
   * `ctrls_color`: Optional, controlers' color, default: 'rgba(173,255,47,0.7)';
-  * `ctrls_hover_color`: Optional, controlers' color when the mouse hover, default: 'rgba(255,140,0,0.8)';
+  * `ctrls_hover_color`: Optional, controlers' color when the mouse hover, default:'rgba(255,140,0,0.8)';
   * `tips_on`: Optional, the message's switch, default: true;
   * `tips_width`: Optional, the message's width, default: 140;
   * `tips_height`: Optional, the message's height, default: 25;
-  * `tips_color`: Optional, the message's background-color,default: 'rgba(255,255,255,0.5)';
+  * `tips_color`: Optional, the message's background-color,default:'rgba(255,255,255,0.5)';
   * `tips_content`: Optional, the message's content, default: in [Javascript](#jump1);
   * `timeout`: Optional, the longest time to wait player's 'canplay' event when `tips_on` is true. And The button is disabled during this time. In addition, the `on_loading` of `tips_content` will close when `timeout` is '0', and the button is valid all the time. default: 30;
   * `showOnPhone`: Sets whether the 'Aplayer-Controler' is dispalyed, default: false;
