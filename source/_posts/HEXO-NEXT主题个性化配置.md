@@ -354,118 +354,57 @@ var ap = new APlayer({
 .aplayer-list-title{float:left;}
 .aplayer-list-author{float:right;}
 ```
-
 ### 自定义萌萌哒音乐播放控制边栏
 描述：效果见本博客右方。<br>
+<del>
 *播放器状态提示方面*：当播放器加载数据到能够播放后点击其会出现控制选项，若音乐不能播放点击其会出现提示信息；若自加载页面30s后仍不能播放，则提示播放器无响应；若播放器出错，则提示播放器错误；当音乐能够播放时提示加载完成。<br>
 *播放器控制方面*：播放模式控制，上一首，暂停/播放，下一首四个按钮。此自定义的模块会记录下你所有播放过的歌曲，所以上一首歌返回的是绝对的上一首歌，不管播放模式如何。当处于上一首歌的状态下（按下了上一首歌按钮一次或者多次），当点击下一首按钮时，还是会按照历史记录的顺序播放；一旦退出此状态，则会按照播放模式进行播放。<br>
 *注*：此自定义过程可能有些麻烦，请读者斟酌修改。
+</del>
+
+由于把这个控制栏部分单独做成了一个引用方便的对象，现在创建更加简单了，自定义也更方便了。
+其详细的使用方法见我的[另一篇博文](http://mashirosorata.vicp.io/APlayer-Controler——可自定义的ap控制器.html)
+#### 添加js代码
+安装APlayer-Controler的js文件：[APlayer-Controler](https://github.com/Mashiro-Sorata/APlayer-Controler)
+将其放入`theme/next/source/js/src`下。
 
 #### 创建按钮区域
 在`theme/next/layout/_custom/`文件夹下新建一个`myapcontroler.swig`的文件。向其中添加以下代码：
 ```Html
-<div class="fixed_side" style="right: 0px">
-  <div class="waitingwordtop"><p>音乐加载中</p></div>
-  <div class="mybtn" style="display: inline-block"></div>
-  <div class="waitingwordbuttom"><p>不如来卖萌</p></div>
-  <div id="mysidebar" class="mysidebar">
-  	<div class="apmode-single"></div>
-  	<div class="apmode-loop"></div>
-  	<div class="apmode-order"></div>
-  	<div class="apmode-random"></div>
-  	<div class="lastsong"></div>
-  	<div class="pause"></div>
-  	<div class="playsong"></div>
-  	<div class="nextsong"></div>
-  	</div>
-</div>
+<script src="js/src/Aplayer-Controler.js"></script>
+<div id="AP-controler"></div>
+<script type="text/javascript">
+var myapc=new APlayer_Controler({
+		APC_dom:$('#AP-controler'),
+		aplayer:ap, //此为绑定的aplayer对象
+		attach_right:true,
+		position:{top:'300px',bottom:''},
+		fixed:true,
+		btn_width:100,
+		btn_height:120,
+		img_src:['http://oty1v077k.bkt.clouddn.com/bukagirl.jpg',
+				'http://oty1v077k.bkt.clouddn.com/jumpgirl.jpg',
+				'http://oty1v077k.bkt.clouddn.com/pentigirl.jpg',
+				'http://oty1v077k.bkt.clouddn.com/%E8%90%8C1.gif'],
+		img_style:{repeat:'no-repeat',position:'center',size:'contain'},
+		ctrls_color:'rgba(173,255,47,0.8)',
+		ctrls_hover_color:'rgba(255,140,0,0.7)',
+		tips_on:true,
+		tips_width:140,
+		tips_height:25,
+		tips_color:'rgba(255,255,255,0.6)',
+		tips_content:{},
+		timeout:30
+	});
+</script>
 ```
-
-#### 添加js代码
-因为代码太长就不粘在这里了，做成外链了，可右键下载。
-[apcontroler.js](http://oucqozot0.bkt.clouddn.com/apcontroler.js)
-将其放入`theme/next/source/js/src`下。然后在`theme/next/layout/_custom/`文件夹下打开`myapcontroler.swig`的文件，向末尾添加以下代码：
-```Html
-<script src="js/src/apcontroler.js"></script>
-```
-
-#### 初始化控制按钮样式
-在`theme/next/source/css/_custom`文件夹下打开`custom.styl`文件，往里面添加以下代码：
-```css
-/*mysidebar controler style*/
-
-.fixed_side{position:fixed;top:250px;width:130px;height:120px;}
-
-.mybtn{position:fixed;width:100px;height:120px;background-color:rgba(220,20,60,0);right:0px;}
-.mybtn:hover{cursor:pointer;}
-
-.waitingwordtop{background-color:rgba(255,255,255,0.5);width:140px;height:30px;position:absolute;top:-30px;right:-110px;color:#9400D3;opacity:0;border-radius:8px;p{height:30px;display:block;text-align:center;line-height:30px;margin-bottom:0px;}}
-.waitingwordbuttom{background-color:rgba(255,255,255,0.5);width:140px;height:30px;position:absolute;top:120px;right:-110px;color:#FF4500;opacity:0;border-radius:8px;p{height:30px;display:block;text-align:center;line-height:30px;margin-bottom:0px;}}
-
-#mysidebar{position:fixed;width:30px;height:120px;right:-30px;opacity:0;}
-
-.mysidebar div{position:absolute;width:28px;height:28px;background-size:100%;background-color:rgba(173,255,47,0.7);border-radius:80px;border: 1px solid black;}
-.mysidebar div:hover{background-color:rgba(255,140,0,0.8);border: 2px solid black;}
-
-.apmode-loop{background:url('http://ou68gv0zg.bkt.clouddn.com/newloop.png');top:0px;right:-30px;opacity:0;}
-
-.apmode-single{background:url('http://ou68gv0zg.bkt.clouddn.com/newsingle.png') no-repeat center;top:0px;right:-30px;opacity:0;}
-
-.apmode-order{background:url('http://ou68gv0zg.bkt.clouddn.com/neworder.png');top:0px;right:-30px;opacity:0;}
-
-.apmode-random{background:url('http://ou68gv0zg.bkt.clouddn.com/newrandom.png');top:0px;right:0px;}
-
-.lastsong{background:url('http://ou68gv0zg.bkt.clouddn.com/lastsong.png');top:30px;right:0px;}
-
-.pause{background:url('http://ou68gv0zg.bkt.clouddn.com/pause.png');top:60px;right:-30px;}
-
-.nextsong{background:url('http://ou68gv0zg.bkt.clouddn.com/nextsong.png');top:90px;right:0px;}
-
-.playsong{background:url('http://ou68gv0zg.bkt.clouddn.com/playsong.png');top:60px;right:0px;}
-```
-其中的颜色，链接，边框可以自定义修改，其他属性最好不要随意修改。其中的颜色链接都是本站的样式，链接可以直接应用。
-
+以上为本站设置，可自定义修改
 #### 将控制按钮加入body页面
 在`theme/next/layout`文件夹下打开`_layout.swig`文件，在`</body>`前添加以下代码：
 ```Html
 {% include '_custom/myapcontroler.swig' %}
 ```
-
-#### 给控制按钮添加背景图
-背景图可以静态图片，也可以是gif动态图。这里用的是一个数组存放动态图片地址链接，每次加载都是随机从中加载一张背景图。
-考虑到有可能是手机等设备访问，在此时将控制按钮的显示隐藏。
-在`theme/next/source/js/src`文件夹下打开`motion.js`文件，在`window.onload=function(){};`（若没有则创建，参见本文[3.2](#jump1)）内添加以下代码：
-```javascript
-var bwol=document.body.offsetWidth;
-//创建背景图链接数组
-var btn_image=['http://oty1v077k.bkt.clouddn.com/bukagirl.jpg',
-               'http://oty1v077k.bkt.clouddn.com/jumpgirl.jpg',
-               'http://oty1v077k.bkt.clouddn.com/%E8%90%8C1.gif'];
-var btn_index =Math.round(Math.random()*(btn_image.length-1));
-if(bwol < 750)
-    $('.fixed_side').css('display','none');
-else
-    $('.fixed_side').css('display','block');
-if(ap.isMobile){
-  $('.fixed_side').css('display','none');
-}
-else {
-  $('.mybtn').css('background','url(' + btn_image[btn_index] + ') no-repeat center');
-  $('.mybtn').css('background-size','contain');
-}
-```
-上面的链接可以直接用，也可以自己更换。
-同时考虑到页面变小的情况，做法相似。
-在`theme/next/source/js/src`文件夹下打开`motion.js`文件，在`window.onresize = function(){};`（若没有则创建，参见本文[3.2](#jump1)）内添加以下代码：
-```javascript
-var bwos=document.body.offsetWidth;
-if(bwos < 750)
-    $('.fixed_side').css('display','none');
-else
-    $('.fixed_side').css('display','block');
-```
 到此，自定义音乐播放控制边栏就基本完成，完成整个配置需要根据自己的主题背景进一步修改完善。
-
 ## DOS风格的404页面
 本站所用的404页面是博主无意间发现的，dos风格的404，逼格满满啊233
 不多说了，该放链接了：
