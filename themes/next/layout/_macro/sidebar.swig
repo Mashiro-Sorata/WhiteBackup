@@ -42,10 +42,8 @@
         <script type="text/javascript">
         $("#sidebar").hover(function(){
           $("#mydivshow").velocity('stop').velocity({opacity: 1});
-          console.log('in');
         },function(){
           $("#mydivshow").velocity('stop').velocity({opacity: 0});
-          console.log('out');
         });
       </script>
 

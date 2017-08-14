@@ -15,7 +15,7 @@ password:
 # 预览图及网页版Demo
 <img class="blockquote-center" src="http://oty1v077k.bkt.clouddn.com/universepreviewpic.gif" width = "800px" height = "100%" alt="preview_pic"/>
 
-<p align="center"><font color=#8B008B  style="font-size:25px" >[DEMO](http://mashirosorata.vicp.io/wallpaper-demo/demo.html)</font></p>
+<p align="center"><font color=#8B008B  style="font-size:25px" >[DEMO](http://mashirosorata.vicp.io/others/wallpaper-demo/demo.html)</font></p>
 
 ***
 
