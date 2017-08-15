@@ -5,7 +5,7 @@ var myapc=new APlayer_Controler({
 		APC_dom:$('#AP-controler'),
 		aplayer:ap,
 		attach_right:true,
-		position:{top:'300px',bottom:''},
+		position:{top:'150px',bottom:''},
 		fixed:true,
 		btn_width:100,
 		btn_height:120,
