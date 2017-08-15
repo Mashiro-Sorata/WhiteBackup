@@ -27,18 +27,18 @@ NPM:
 ---
 
 # 使用说明(Usage)
-## Important
+  ## Important
   Make sure that "jquery" and "velocity" are existed in your project environment!
   ```html
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
   ```
-## HTML
+  ## HTML
   ```html
     <div id="myapcid"></div>
     <script src="scr/Aplayer-Controler.min.js"></script>
   ```
-<h2 id="jump1">Javascript</h2>
+  <h2 id="jump1">Javascript</h2>
   ```javascript
   var myap = new APlayer({......});  //Aplayer Part
 
@@ -72,7 +72,7 @@ NPM:
         songrecord_log:false
   };
   ```
-## Details
+  ## Details
   * `APC_dom`: Required, controler's id or className--"#id", ".class", $();
   * `aplayer`: Required, aplayer object;
   * `attach_right`: Optional, whether controler on the right, default: true;
@@ -93,7 +93,7 @@ NPM:
   * `showOnPhone`: Optional, whether the "Aplayer-Controler" is dispalyed on the phone, default: false;
   * `songrecord_log`: Optional, whether the song history shows in the console, default: false.
 
-## Details(Chinese Version)
+  ## Details(Chinese Version)
   * `APC_dom`: 必须，所绑定的APlayer_Controler，可以为".className", "#idName", 或者$(), getElementById绑定;
   * `aplayer`: 必须，所绑定的APlayer对象;
   * `attach_right`:APlayer_Controler附着在左边或者右边，默认为右边(true);
