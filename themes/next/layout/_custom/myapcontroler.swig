@@ -1,4 +1,4 @@
-<script src="js/src/Aplayer-Controler.min.js"></script>
+<script src="/js/src/Aplayer-Controler.min.js"></script>
 <div id="AP-controler"></div>
 <script type="text/javascript">
 var myapc=new APlayer_Controler({

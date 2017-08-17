@@ -371,7 +371,7 @@ var ap = new APlayer({
 #### 创建按钮区域
 在`theme/next/layout/_custom/`文件夹下新建一个`myapcontroler.swig`的文件。向其中添加以下代码：
 ```Html
-<script src="js/src/Aplayer-Controler.js"></script>
+<script src="/js/src/Aplayer-Controler.js"></script>
 <div id="AP-controler"></div>
 <script type="text/javascript">
 var myapc=new APlayer_Controler({
