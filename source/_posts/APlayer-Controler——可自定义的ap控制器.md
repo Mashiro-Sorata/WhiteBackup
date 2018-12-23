@@ -9,7 +9,7 @@ password:
 description:
 
 ---
-<div align="center"><img alt="AP-preview" src="http://oty1v077k.bkt.clouddn.com/apctrler-instruction.png"></div>
+<div align="center"><img alt="AP-preview" src="http://mashirosorata.vicp.io/apctrler-instruction.png"></div>
 # 前言(Introduction)
 最近配置网站的时候，做了一个*Aplayer*的个性控制器（本站右端），在此基础上就把它做成了一个引用简单的对象，自定义配置更方便了。
 **注**：此1.0.0版本与Aplayer的1.6.0版本相匹配。

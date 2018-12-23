@@ -13,7 +13,7 @@ password:
 以下为steam上创意工坊的链接：[Theories Of The Universe](http://steamcommunity.com/sharedfiles/filedetails/?id=848592407)
 
 # 预览图及网页版Demo
-<img class="blockquote-center" src="http://oty1v077k.bkt.clouddn.com/universepreviewpic.gif" width = "800px" height = "100%" alt="preview_pic"/>
+<img class="blockquote-center" src="http://mashirosorata.vicp.io/universepreviewpic.gif" width = "800px" height = "100%" alt="preview_pic"/>
 
 <p align="center"><font color=#8B008B  style="font-size:25px" >[DEMO](http://mashirosorata.vicp.io/others/wallpaper-demo/demo.html)</font></p>
 
@@ -57,6 +57,6 @@ password:
 
 ***
 # PS(备注)
-<div align="center" style="height:40%"><img src="http://oty1v077k.bkt.clouddn.com/%E8%90%8C1.gif" height = "100%" alt="jump"/></div>
+<div align="center" style="height:40%"><img src="http://mashirosorata.vicp.io/%E8%90%8C1.gif" height = "100%" alt="jump"/></div>
 目前忙起来暂时不会动这个项目了，大概吧……<br/>
 有兴趣的朋友可以在[我的仓库](https://github.com/Mashiro-Sorata/Theories_Of_The_Universe)里看一下吧~
