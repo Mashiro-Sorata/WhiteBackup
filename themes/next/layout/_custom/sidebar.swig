@@ -13,65 +13,89 @@
 	    listmaxheight: '250px',                                             // Optional, max height of play list
 	    music: [
 	    {
-	    	title: '楽園PROJECT',                                          // Required, music title
-	        author: 'Ray',                          // Required, music author
-	        url: 'http://mashirosorata.vicp.io/Ray%20-%20%E6%A5%BD%E5%9C%92PROJECT.mp3',  // Required, music url
-	        pic: 'http://mashirosorata.vicp.io/Ray%20-%20%E6%A5%BD%E5%9C%92PROJECT.jpg'
+	    	title: 'Intro - intro',                                          // Required, music title
+	        author: '西原健一郎',                          // Required, music author
+	        url: 'http://pn44fespx.bkt.clouddn.com/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Intro%20-%20intro.mp3',  // Required, music url
+	        pic: 'http://pn44fespx.bkt.clouddn.com/616826023203575.jpg'
 	    },
 	    {
-	    	title: '恋人を射ち堕とした日',
-	    	author: 'Sound Horizon',
+	    	title: 'Natural Relax',
+	    	author: '西原健一郎',
 	    	url: 'http://mashirosorata.vicp.io/Sound%20Horizon%20-%20%E6%81%8B%E4%BA%BA%E3%82%92%E5%B0%84%E3%81%A1%E5%A0%95%E3%81%A8%E3%81%97%E3%81%9F%E6%97%A5%20_%20Koibito%20wo%20Uchiotoshia%20Hi.mp3',
-	    	pic: 'http://mashirosorata.vicp.io/Sound%20Horizon%20-%20%E6%81%8B%E4%BA%BA%E3%82%92%E5%B0%84%E3%81%A1%E5%A0%95%E3%81%A8%E3%81%97%E3%81%9F%E6%97%A5.jpg'
+	    	pic: 'http://pn44fespx.bkt.clouddn.com/616826023203575.jpg'
 	    },
 	    {
-	    	title: 'cat\'s dance',
-	    	author: 'すーぱーそに子',
-	    	url: 'http://mashirosorata.vicp.io/%E3%81%99%E3%83%BC%E3%81%B1%E3%83%BC%E3%81%9D%E3%81%AB%E5%AD%90%20-%20cat%27s%20dance.mp3',
-	    	pic: 'http://mashirosorata.vicp.io/%E3%81%99%E3%83%BC%E3%81%B1%E3%83%BC%E3%81%9D%E3%81%AB%E5%AD%90%20-%20cat%27s%20dance.jpg'
+	    	title: 'Get Inside Your Heart feat. Pismo',
+	    	author: '西原健一郎',
+	    	url: 'http://pn44fespx.bkt.clouddn.com/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Get%20Inside%20Your%20Heart%20feat.%20Pismo.mp3',
+	    	pic: 'http://pn44fespx.bkt.clouddn.com/616826023203575.jpg'
 	    },
 	    {
-	    	title: '夏令时记录(piano.ver)',
-	    	author: 'ゆめこ',
-	    	url: 'http://mashirosorata.vicp.io/%E3%82%86%E3%82%81%E3%81%93%20-%20%E5%A4%8F%E4%BB%A4%E6%97%B6%E8%AE%B0%E5%BD%95%28piano.ver%29.mp3',
-	    	pic: 'http://mashirosorata.vicp.io/%E3%82%86%E3%82%81%E3%81%93%20-%20%E5%A4%8F%E4%BB%A4%E6%97%B6%E8%AE%B0%E5%BD%95%28piano.ver%29.jpg'
+	    	title: 'Beautiful Things Remix feat. Amanda Diva - remix',
+	    	author: '西原健一郎',
+	    	url: 'http://pn44fespx.bkt.clouddn.com/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Beautiful%20Things%20Remix%20feat.%20Amanda%20Diva%20-%20remix.mp3',
+	    	pic: 'http://pn44fespx.bkt.clouddn.com/616826023203575.jpg'
 	    },
 	    {
-	    	title: '月光',
-	    	author: '鬼束千寻',
-	    	url: 'http://mashirosorata.vicp.io/%E9%AC%BC%E6%9D%9F%E5%8D%83%E5%AF%BB%20-%20%E6%9C%88%E5%85%89.mp3',
-	    	pic: 'http://mashirosorata.vicp.io/%E9%AC%BC%E6%9D%9F%E5%8D%83%E5%AF%BB%20-%20%E6%9C%88%E5%85%89.jpg'
+	    	title: 'Heartbeat',
+	    	author: '西原健一郎',
+	    	url: 'http://pn44fespx.bkt.clouddn.com/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Heartbeat.mp3',
+	    	pic: 'http://pn44fespx.bkt.clouddn.com/616826023203575.jpg'
 	    },
 			{
-	    	title: 'No title',                                          // Required, music title
-	        author: 'れをる,ギガP',                          // Required, music author
-	        url: 'http://mashirosorata.vicp.io/%E3%82%8C%E3%82%92%E3%82%8B,%E3%82%AE%E3%82%ACP%20-%20No%20title.mp3',  // Required, music url
-	        pic: 'http://mashirosorata.vicp.io/%E3%82%8C%E3%82%92%E3%82%8B,%E3%82%AE%E3%82%ACP%20-%20No%20title.jpg'
+	    	title: 'Silent Motorway',                                          // Required, music title
+	        author: '西原健一郎',                          // Required, music author
+	        url: 'http://pn44fespx.bkt.clouddn.com/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Silent%20Motorway.mp3',  // Required, music url
+	        pic: 'http://pn44fespx.bkt.clouddn.com/616826023203575.jpg'
 	    },
 	    {
-	    	title: '空想フォレスト',
-	    	author: '伊東歌詞太郎',
-	    	url: 'http://mashirosorata.vicp.io/%E4%BC%8A%E6%9D%B1%E6%AD%8C%E8%A9%9E%E5%A4%AA%E9%83%8E%20-%20%E7%A9%BA%E6%83%B3%E3%83%95%E3%82%A9%E3%83%AC%E3%82%B9%E3%83%88.mp3',
-	    	pic: 'http://mashirosorata.vicp.io/%E4%BC%8A%E6%9D%B1%E6%AD%8C%E8%A9%9E%E5%A4%AA%E9%83%8E%20-%20%E7%A9%BA%E6%83%B3%E3%83%95%E3%82%A9%E3%83%AC%E3%82%B9%E3%83%88.gif'
+	    	title: 'Heart Remix feat. Substantial - remix',
+	    	author: '西原健一郎',
+	    	url: 'http://pn44fespx.bkt.clouddn.com/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Heart%20Remix%20feat.%20Substantial%20-%20remix.mp3',
+	    	pic: 'http://pn44fespx.bkt.clouddn.com/616826023203575.jpg'
 	    },
 	    {
-	    	title: 'だんご大家族',
-	    	author: '茶太',
-	    	url: 'http://mashirosorata.vicp.io/Key%20Sounds%20Label%20-%20%E3%81%A0%E3%82%93%E3%81%94%E5%A4%A7%E5%AE%B6%E6%97%8F.mp3',
-	    	pic: 'http://mashirosorata.vicp.io/Key%20Sounds%20Label%20-%20%E3%81%A0%E3%82%93%E3%81%94%E5%A4%A7%E5%AE%B6%E6%97%8F.jpg'
+	    	title: 'Folklove (Inst.) - instrumental',
+	    	author: '西原健一郎',
+	    	url: 'http://pn44fespx.bkt.clouddn.com/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Folklove%20%28Inst.%29%20-%20instrumental.mp3',
+	    	pic: 'http://pn44fespx.bkt.clouddn.com/616826023203575.jpg'
 	    },
 	    {
-	    	title: 'Clover Heart\'s-New days recording',
-	    	author: 'MANYO,三輪学',
-	    	url: 'http://mashirosorata.vicp.io/MANYO,%E4%B8%89%E8%BC%AA%E5%AD%A6%20-%20Clover%20Heart%27s%20-New%20days%20recording-.mp3',
-	    	pic: 'http://mashirosorata.vicp.io/MANYO,%E4%B8%89%E8%BC%AA%E5%AD%A6%20-%20Clover%20Heart%27s%20-New%20days%20recording-.jpg'
+	    	title: 'Sign feat. Jun',
+	    	author: '西原健一郎',
+	    	url: 'http://pn44fespx.bkt.clouddn.com/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Sign%20feat.%20Jun.mp3',
+	    	pic: 'http://pn44fespx.bkt.clouddn.com/616826023203575.jpg'
 	    },
 	    {
-	    	title: 'Secret',
-	    	author: '茶太',
-	    	url: 'http://mashirosorata.vicp.io/%E8%8C%B6%E5%A4%AA%20-%20Secret.mp3',
-	    	pic: 'http://mashirosorata.vicp.io/%E8%8C%B6%E5%A4%AA%20-%20Secret.jpg'
-	    }]
+	    	title: 'Montana',
+	    	author: '西原健一郎',
+	    	url: 'http://pn44fespx.bkt.clouddn.com/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Montana.mp3',
+	    	pic: 'http://pn44fespx.bkt.clouddn.com/616826023203575.jpg'
+	    },
+			{
+				title: 'Mature Opinion (Inst.) - instrumental',
+				author: '西原健一郎',
+				url: 'http://pn44fespx.bkt.clouddn.com/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Mature%20Opinion%20%28Inst.%29%20-%20instrumental.mp3',
+				pic: 'http://pn44fespx.bkt.clouddn.com/616826023203575.jpg'
+			},
+			{
+				title: 'Individual Carnival',
+				author: '西原健一郎',
+				url: 'http://pn44fespx.bkt.clouddn.com/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Individual%20Carnival.mp3',
+				pic: 'http://pn44fespx.bkt.clouddn.com/616826023203575.jpg'
+			},
+			{
+				title: 'Say You Love Me feat. Tamala',
+				author: '西原健一郎',
+				url: 'http://pn44fespx.bkt.clouddn.com/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Say%20You%20Love%20Me%20feat.%20Tamala.mp3',
+				pic: 'http://pn44fespx.bkt.clouddn.com/616826023203575.jpg'
+			},
+			{
+				title: 'Outro - intro',
+				author: '西原健一郎',
+				url: 'http://pn44fespx.bkt.clouddn.com/%E8%A5%BF%E5%8E%9F%E5%81%A5%E4%B8%80%E9%83%8E%20-%20Outro%20-%20intro.mp3',
+				pic: 'http://pn44fespx.bkt.clouddn.com/616826023203575.jpg'
+			}]
 });
 
   $('.aplayer-icon-menu')[0].click();   //initial height

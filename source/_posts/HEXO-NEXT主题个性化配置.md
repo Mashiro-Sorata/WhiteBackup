@@ -9,7 +9,6 @@ password:
 description:
 
 ---
-![github](http://mashirosorata.vicp.io/hexo-github.png)
 # 前言
 此文章用来记录本网站个性化的设置更改，以便备用，或者供人参考。<br>提醒一下：**博主next主题风格用的是Mist，若主题风格不一样，有些地方需酌情修改**。<br>在其他地方能找到的教程这里就不重复赘述，文章结尾会给出一些更为详尽的其他参考链接。
 <!-- more -->
@@ -382,10 +381,11 @@ var myapc=new APlayer_Controler({
 		fixed:true,
 		btn_width:100,
 		btn_height:120,
-		img_src:['http://mashirosorata.vicp.io/bukagirl.jpg',
-				'http://mashirosorata.vicp.io/jumpgirl.jpg',
-				'http://mashirosorata.vicp.io/pentigirl.jpg',
-				'http://mashirosorata.vicp.io/%E8%90%8C1.gif'],
+    img_src:['https://t1.picb.cc/uploads/2019/02/18/VhsfTw.gif',
+				'https://t1.picb.cc/uploads/2019/02/18/VhzJAe.gif',
+				'https://t1.picb.cc/uploads/2019/02/18/VhzVBs.gif',
+				'https://t1.picb.cc/uploads/2019/02/18/Vhzt46.gif',
+				'https://t1.picb.cc/uploads/2019/02/18/VhzZbT.gif'],
 		img_style:{repeat:'no-repeat',position:'center',size:'contain'},
 		ctrls_color:'rgba(173,255,47,0.8)',
 		ctrls_hover_color:'rgba(255,140,0,0.7)',
@@ -426,4 +426,4 @@ var myapc=new APlayer_Controler({
 >https://thief.one/2017/03/03/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/
 
 版权声明：版权所有权属于Mashiro_Sorata，转载请注明出处，谢谢！
-![post](http://mashirosorata.vicp.io/jianc_jump.gif)
+![post](https://t1.picb.cc/uploads/2019/02/18/VhzVBs.gif)
