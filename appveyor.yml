@@ -2,7 +2,7 @@ clone_depth: 5
 
 environment:
   my_variable:
-    secure: oezPXviHBNqictHRa8DVZA/s3RUDZwpKwo8cOLPuYTtpipN17zawYDWbNYUmFrMx
+    secure: 0Eog/rQbQ/fJ9f99LPeHtk0U3LhDXHxmkfbvnWgYEIPuxDgp8ZQNko2p2MsoEgyo
 
 install:
     - ps: Install-Product node 6.9 # 默认node版本太老
