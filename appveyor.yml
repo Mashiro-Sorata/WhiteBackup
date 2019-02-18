@@ -3,7 +3,7 @@ clone_depth: 5
 environment:
   nodejs_version: "6"
   my_variable:
-    secure: 0Eog/rQbQ/fJ9f99LPeHtk0U3LhDXHxmkfbvnWgYEIPuxDgp8ZQNko2p2MsoEgyo
+    secure: neUE9K2JtMrugqhOR0EL6iOa2YcnVGMEr7o2Gmqldm/vS27CPlH+shGdwU7g4muE
 
 install:
     - ps: Install-Product node $env:nodejs_version
