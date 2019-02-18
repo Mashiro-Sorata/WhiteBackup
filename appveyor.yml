@@ -1,10 +1,11 @@
 clone_depth: 5
 
 environment:
-  access_token:
-    secure: gA/QV9K1ncf2C85kbS0cU1gTSG7201+5/dZVWkCbLDaQumktko/L6xq+HXmCJ8sC
+  my_variable:
+    secure: Z+V7a8Ssj7PfP9QuLitUo/iKilsyc+Ygv2q5JdfXZY3DRakLEnHs5EouVvbwjruz
 
 install:
+  - ps: Install-Product node 6.9 # 默认node版本太老
   - node --version
   - npm --version
   - npm install
