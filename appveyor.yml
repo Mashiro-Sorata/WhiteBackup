@@ -1,12 +1,10 @@
 clone_depth: 5
 
 environment:
-  nodejs_version: "6"
   my_variable:
     secure: neUE9K2JtMrugqhOR0EL6iOa2YcnVGMEr7o2Gmqldm/vS27CPlH+shGdwU7g4muE
 
 install:
-    - ps: Install-Product node $env:nodejs_version
     - node --version
     - npm --version
     - npm install

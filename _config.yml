@@ -115,5 +115,5 @@ baidusitemap:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: git@github.com:Mashiro-Sorata/Mashiro-Sorata.github.io.git
+  repository: https://github.com/Mashiro-Sorata/Mashiro-Sorata.github.io.git
   branch: master
