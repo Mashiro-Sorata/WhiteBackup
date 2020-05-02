@@ -2,7 +2,7 @@ clone_depth: 5
 
 environment:
   access_token:
-    secure: neUE9K2JtMrugqhOR0EL6iOa2YcnVGMEr7o2Gmqldm/vS27CPlH+shGdwU7g4muE
+    secure: AX69L2R6ZeOqg37jsE0jwPIasi7fIllA3m1JPUHtc1swhGo/XqOpD3R1KNxRgMJk
 
 install:
   - ps: Install-Product node 6.9
