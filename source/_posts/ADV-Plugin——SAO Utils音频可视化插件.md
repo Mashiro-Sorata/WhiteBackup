@@ -114,6 +114,6 @@ License为[MIT](https://github.com/Mashiro-Sorata/ADV-Plugin/blob/master/LICENSE
 
 ---
 
-![post](https://t1.picb.cc/uploads/2019/02/18/VhzVBs.gif)
+![post](https://wx2.sbimg.cn/2020/06/14/VhzVBs.gif)
 
 版权声明：版权所有权属于Mashiro_Sorata，转载请注明出处，谢谢！
