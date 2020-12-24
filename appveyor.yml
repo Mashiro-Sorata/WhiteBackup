@@ -9,10 +9,13 @@ install:
     - npm --version
     - npm install
     - npm install hexo-cli -g
+    
 build_script:
     - hexo generate
+    
 artifacts:
     - path: public
+    
 on_success:
     - git config --global credential.helper store
     - ps: Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
