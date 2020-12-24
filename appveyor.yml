@@ -8,7 +8,7 @@ install:
     - node --version
     - npm --version
     - npm install
-    - npm install hexo-cli -g 3.1
+    - npm install hexo-cli@3.1.0 -g
     
 build_script:
     - hexo generate
