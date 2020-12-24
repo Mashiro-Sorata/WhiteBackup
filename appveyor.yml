@@ -4,17 +4,22 @@ environment:
   access_token:
     secure: AX69L2R6ZeOqg37jsE0jwPIasi7fIllA3m1JPUHtc1swhGo/XqOpD3R1KNxRgMJk
 
+
 install:
   - node --version
   - npm --version
   - npm install
   - npm install hexo-cli -g
 
+
 build_script:
   - hexo generate
 
+
+
 artifacts:
   - path: public
+
 
 on_success:
   - git config --global credential.helper store
