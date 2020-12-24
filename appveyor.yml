@@ -5,11 +5,10 @@ environment:
     secure: AX69L2R6ZeOqg37jsE0jwPIasi7fIllA3m1JPUHtc1swhGo/XqOpD3R1KNxRgMJk
 
 install:
-    - ps: Install-Product npm 6.13
     - node --version
     - npm --version
     - npm install
-    - npm install hexo-cli -g
+    - npm install hexo-cli -g 3.1
     
 build_script:
     - hexo generate
