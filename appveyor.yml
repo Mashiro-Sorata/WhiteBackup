@@ -5,7 +5,7 @@ environment:
     secure: AX69L2R6ZeOqg37jsE0jwPIasi7fIllA3m1JPUHtc1swhGo/XqOpD3R1KNxRgMJk
 
 install:
-    - ps: Install-Product node 12.18
+    - ps: Install-Product node 9.17
     - node --version
     - npm --version
     - npm install
