@@ -8,7 +8,7 @@ install:
   - node --version
   - npm --version
   - npm install
-  - npm install -g hero-cli
+  - npm install hexo-cli -g
 
 build_script:
   - hexo generate
