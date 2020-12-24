@@ -13,7 +13,7 @@ install:
 
 
 build_script:
-  - hexo generate
+- hexo generate
 
 
 
