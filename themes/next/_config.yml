@@ -22,8 +22,7 @@ authoricon: heart
 # Footer `powered-by` and `theme-info` copyright
 copyright: true
 
-footer:
-  counter: true
+
 # Canonical, set a canonical link tag in your hexo, you could use it for your SEO of blog.
 # See: https://support.google.com/webmasters/answer/139066
 # Tips: Before you open this tag, remember set up your URL in hexo _config.yml ( ex. url: http://yourdomain.com )
@@ -407,12 +406,18 @@ leancloud_visitors:
 busuanzi_count:
   # count values only if the other configs are false
   enable: true
-  total_visitors: true   #统计访客数
-  total_visitors_icon: user
-  total_views: true    #统计访问数
-  total_views_icon: eye
-  post_views: true   #统计文章阅读数
-  post_views_icon: eye
+  # custom uv span for the whole site
+  site_uv: true
+  site_uv_header: <i class="fa fa-user"></i>
+  site_uv_footer:
+  # custom pv span for the whole site
+  site_pv: true
+  site_pv_header: <i class="fa fa-eye"></i>
+  site_pv_footer:
+  # custom pv span for one page only
+  page_pv: true
+  page_pv_header: <i class="fa fa-file-o"></i>
+  page_pv_footer:
 
 
 # Tencent analytics ID
