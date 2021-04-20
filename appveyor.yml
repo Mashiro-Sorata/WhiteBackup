@@ -9,13 +9,14 @@ install:
     - npm --version
     - npm install
     - npm install hexo-cli@3.1.0 -g
-    
+    - npm uninstall hexo-helper-live2d
+
 build_script:
     - hexo generate
-    
+
 artifacts:
     - path: public
-    
+
 on_success:
     - git config --global credential.helper store
     - ps: Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"

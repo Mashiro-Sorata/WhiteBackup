@@ -89,10 +89,10 @@ plugins: hexo-generate-feed
 theme: next
 
 #live2d宠物
-live2d:
-  enable: false
-  model: koharu
-  bottom: -30
+#live2d:
+  #enable: false
+  #model: koharu
+  #bottom: -30
   #width: 宽度 默认值: 150
   #height: 高度 默认值：300
   #className: <canvas> 元素的类名 默认值： live2d
