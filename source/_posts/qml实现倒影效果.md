@@ -16,7 +16,7 @@ description:
 在网上查找qml中实现倒影效果的相关内容时，国内网站有关的内容都是使用ShaderEffect实现的，且代码都是以图片(Image)为例。
 在GPbeta的帮助下，找到了另一种使用OpacityMask实现倒影效果的方式，对控件和图片都有效果，在此记录一下。效果图如下。
 
-<div align="center"><img src="https://files.catbox.moe/00mpv1.png"></div>
+<div align="center"><img src="https://p.qlogo.cn/zc_icon/0/30d44896cc00d94822029bd0b5224abf16275505938473/0.png"></div>
 
 <!-- more -->
 
